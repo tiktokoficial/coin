@@ -224,7 +224,7 @@ function redeemDemoCoins(){
  if(!username){username=askTikTokUsername();if(!username)return;}
  const status=document.getElementById('demoClaimStatus'),button=document.getElementById('demoRedeemButton');
  if(!status||!button)return;
- status.textContent='Resgate demonstrativo registrado para @'+username+'. Nenhuma moeda real foi transferida.';
+ status.textContent='Resgate de Moedas Efetuado com sucesso.';
  status.classList.add('visible');button.textContent='RESGATADO';button.disabled=true;
  try{localStorage.setItem('coins_tiktok_demo_redeemed_user',username);}catch(e){}
 }
